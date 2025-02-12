@@ -136,7 +136,7 @@ void dllInject(HANDLE hProcess, DWORD pid) {
 	printf("done!\n\n");
 
 	// Find hModule of injected DLL!
-	Sleep(1000); // Delay so we can make snapshot!
+	Sleep(2000); // Delay so we can make snapshot!
 	HANDLE ss = CreateToolhelp32Snapshot(TH32CS_SNAPMODULE | TH32CS_SNAPMODULE32, pid);
 	if (ss == INVALID_HANDLE_VALUE)
 	{
